@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.sub-con {
+    margin-top: 13%;
+}
+
+.moon {
+    background-color: seashell;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    filter: drop-shadow(8px 8px 50px gray);
+    /* filter: blur(1px); */
+
+}
+
+button {
+    padding: 5px 20px 5px 20px;
+    transform: scale(1.2);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: bisque;
+
+}
+
+.spot,
+.spot1,
+.spot2 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 50%;
+    filter: blur(23px);
+    position: relative;
+    top: 5rem;
+    left: 4rem;
+}
+
+.spot1 {
+    top: 10rem;
+    left: 15rem;
+}
+
+.spot2 {
+    /* background-color: aqua; */
+    height: 40px;
+    width: 40px;
+    top: 8rem;
+    right: 1rem;
+}
